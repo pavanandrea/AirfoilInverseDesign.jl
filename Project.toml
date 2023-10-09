@@ -1,0 +1,12 @@
+name = "AirfoilInverseDesign"
+uuid = "8f1c8181-6577-4a83-9816-baccb56cdcf0"
+authors = ["Andrea Pavan"]
+version = "0.1.0"
+
+[deps]
+BlackBoxOptim = "a134a8b2-14d6-55f6-9291-3336d3ab0209"
+FFMPEG = "c87230d0-a227-11e9-1b43-d7ebe4e7570a"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Optim = "429524aa-4258-5aef-a3af-852621145aeb"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Xfoil = "19641d66-a62d-11e8-2441-8f57a969a9c4"
