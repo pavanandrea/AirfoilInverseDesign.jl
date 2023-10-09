@@ -20,7 +20,7 @@ To install AirfoilInverseDesign.jl, follow these steps:
 
 1. Open Julia REPL by running `julia` in your terminal or command prompt.
 2. Press the `]` key to enter in Package manager mode.
-3. Run `add https://github.com/andreapavan/AirfoilInverseDesign.jl` to add the package to your Julia environment.
+3. Run `add https://github.com/pavanandrea/AirfoilInverseDesign.jl` to add the package to your Julia environment.
 4. Load the package by running `using AirfoilInverseDesign`.
 
 Getting started
@@ -89,8 +89,8 @@ Note that this example only takes a few minutes on an average desktop computer t
 
 |  Airfoil   |   CD @CL=0.4      |   CL/CD @CL=0.4   |   CD @CL=0.8      |   CL/CD @CL=0.8   |
 |-----------:|------------------:|------------------:|------------------:|------------------:|
-|  NACA-4412 | 0.008053          | 49.7          | 0.008582          | 93.2          |
-|  Optimized | 0.007027          | 56.9 (+14.5%) | 0.008169          | 97.9 (+5.1%) |
+|  NACA-4412 | 0.008053          | 49.7              | 0.008582          | 93.2              |
+|  Optimized | 0.007027          | 56.9 (+14.5%)     | 0.008169          | 97.9 (+5.1%)      |
 
 The resulting polar curve does not exhibit the classic "spike" that plagues airfoils optimized by traditional method. Instead, thanks to the flow-feature parametrization, it presents a wide plateau that facilitates the practical use of the airfoil and makes the design less sensitive to perturbations.
 Obviously the NACA-4412 performs better at high CL values, since the optimizer sacrificed efficiency outside the desired range.
@@ -105,7 +105,7 @@ AirfoilInverseDesign.jl is licensed under the MIT License. See the file named LI
 Contributions
 -------------
 
-This package is a scratch reimplementation in Julia of my Bachelor's final project, which was originally written in MATLAB within the LiftUp student team. The goal of the project was to design an optimized airfoil for a fixed-wing drone to compete in the Air Cargo Challenge.
+This package is a scratch reimplementation in Julia of my Bachelor's final project, which was originally written in MATLAB within the [LiftUp student team](https://www.teamliftup.it/). The goal of the project was to design an optimized airfoil for a fixed-wing drone to compete in the Air Cargo Challenge.
 
 For this reason, I'm not accepting contributions to the codebase. However I welcome any question, feedback or request you may have.
 
