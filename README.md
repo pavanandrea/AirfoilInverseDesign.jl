@@ -100,7 +100,7 @@ See example/airfoil_global_optimization.jl and example/airfoil_local_optimizatio
 License
 -------
 
-AirfoilInverseDesign.jl is licensed under the MIT License. See LICENSE.txt for more information.
+AirfoilInverseDesign.jl is licensed under the MIT License. See the file named LICENSE for more information.
 
 Contributions
 -------------
