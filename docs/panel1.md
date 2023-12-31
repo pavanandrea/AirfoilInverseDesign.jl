@@ -26,7 +26,7 @@ $$ V_{IND\_x} = \int_{-l/2}^{+l/2} \frac{y}{y^2 + (x-s)^2} \left[ γ_A + \left( 
 
 Omitting the calculus steps, this integral with respect to variable s has the following primitive:
 
-$$ \frac{1}{2l} \left\{ \left[ γ_A (l-2x) + γ_B (l+2x) \right] \arctan \left( \frac{s-x}{y} \right) + y (γ_B - γ_A) \ln \left[ y^2 + (x-s)^2 \right] \right\} + const $$
+$$ \frac{1}{2l} \left( \left[ γ_A (l-2x) + γ_B (l+2x) \right] \arctan \left( \frac{s-x}{y} \right) + y (γ_B - γ_A) \ln \left[ y^2 + (x-s)^2 \right] \right) + const $$
 
 Therefore:
 
@@ -53,13 +53,11 @@ $$ dV_{IND\_y} = \int_{-l/2}^{+l/2} dV_{IND} \cos \theta = \int_{-l/2}^{+l/2} \f
 
 Substituting the linear distribution $γ(s)$ leads to an integral with the following primitive:
 
-$$ -\frac{1}{4l} \left\{ \left[ γ_A (l-2x) + γ_B (l+2x) \right] \ln \left[ y^2 + (x-s)^2 \right] + 4y(γ_A - γ_B) \arctan \left( \frac{s-x}{y} \right) -4(γ_A - γ_B)(s-x) \right\} + const $$
+$$ -\frac{1}{4l} \left( \left[ γ_A (l-2x) + γ_B (l+2x) \right] \ln \left[ y^2 + (x-s)^2 \right] + 4y(γ_A - γ_B) \arctan \left( \frac{s-x}{y} \right) -4(γ_A - γ_B)(s-x) \right) + const $$
 
 The final expression written as a linear combination of $γ_A$ and $γ_B$ is:
 
-$$ V_{IND\_y} =
-\frac{γ_A}{8πl} \left[ (l-2x) C - 4yD + 4l \right]
-+ \frac{γ_B}{8πl} \left[ (l+2x) C + 4yD - 4l \right] $$
+$$ V_{IND\_y} = \frac{γ_A}{8πl} \left[ (l-2x) C - 4yD + 4l \right] + \frac{γ_B}{8πl} \left[ (l+2x) C + 4yD - 4l \right] $$
 
 Note that it is useful to rearrange the expressions as a linear combination of $γ_A$ and $γ_B$. This will come handy later when writing the impermeability conditions.
 

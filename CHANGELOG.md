@@ -1,4 +1,4 @@
-# ShallowChessAI Development Changelog
+# AirfoilInverseDesign Development Changelog
 
 ### Update 2023/12/31
 
