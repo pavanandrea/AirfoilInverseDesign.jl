@@ -1,22 +1,21 @@
 #======================================================================
-    Example script that generates the airfoil geometry that generates
-    a given target pressure distribution
+    Example script that given a target pressure distribution as input
+    generates the corresponding airfoil geometry
 
     Author: Andrea Pavan
     Project: AirfoilInverseDesign.jl package
     License: MIT
-    Date: 08/09/2023
+    Date: 30/12/2023
 ======================================================================#
 using AirfoilInverseDesign;
 using Plots;
 
-#define the starting airfoil (a NACA-0009 with 100 nodes)
-(airfoil0,airfoil0header) = generatenaca4airfoil("0009", 100);
+#define the starting airfoil (a NACA-0009 with 20 nodes)
+(airfoil0,airfoil0header) = generatenaca4airfoil("0009", 20);
 
-#define the target pressure distribution from a set of 10 parameters
-#and evaluate it at the airfoil0 nodes
-params = tanh.([0.27, -0.79, 0.4, 1.8, -0.1, 0.04, -0.275, 3.3, 5.5, 0.175]);
-cptarget = cpgen10h(params, airfoil0[:,1]);
+#define the target pressure distribution from a set of 8 parameters
+params = [0.037, 0.0, 0.0, 0.0215, -0.226, -0.02, -0.015, 0.0812];
+cptarget = cpgen08n(params);
 
 #airfoil inverse design
 (airfoil,status) = mgm(cptarget, airfoil0);

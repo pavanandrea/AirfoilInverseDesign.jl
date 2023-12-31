@@ -31,7 +31,7 @@ function objectivefun(params)
 
     #generate airfoil geometry using the MGM inverse design method
     (airfoil0,_) = generatenaca4airfoil("0009", 50);
-    cptarget = cpgen10h(atanh.(params), airfoil0[:,1]);
+    cptarget = cpgen10h(params, airfoil0[:,1]);
     (airfoil,status) = mgm(cptarget, airfoil0);
     if !startswith(status, "COMPLETED")
         return NaN;

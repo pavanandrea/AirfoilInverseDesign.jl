@@ -25,6 +25,7 @@ function importairfoilfromfile(filein)
         return ([],"");
     end
     lines = readlines(filein);
+    lines = lines[lines.!=""];
     header = lines[1];
     airfoil = zeros(length(lines)-1,2);
     for i=1:length(lines)-1

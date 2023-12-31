@@ -19,7 +19,7 @@
 ======================================================================#
 module AirfoilInverseDesign
 export importairfoilfromfile, exportairfoildat, generatenaca4airfoil, maximumthickness;
-export mgm, cpgen10h;
+export mgm, cpgen10h, cpgen08n;
 export panel1;
 export neldermead;
 

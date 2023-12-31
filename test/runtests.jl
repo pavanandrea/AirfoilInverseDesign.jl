@@ -26,6 +26,6 @@ exportairfoildat(airfoil1, airfoil1header, joinpath(@__DIR__,"01_naca_4412_gener
 #mgm
 (airfoil3,status) = mgm(cptarget, airfoil2);
 @test sum(isnan.(airfoil3))==0 && startswith(status,"COMPLETED") && airfoil3==airfoil2;
-params = [0.27, -0.79, 0.4, 1.8, -0.1, 0.04, -0.275, 3.3, 5.5, +0.175];
+params = tanh.([0.27, -0.79, 0.4, 1.8, -0.1, 0.04, -0.275, 3.3, 5.5, +0.175]);
 cpgenerated = cpgen10h(params,airfoil3[:,1]);
 @test sum(isnan.(cpgenerated))==0 && -0.80<=minimum(cpgenerated[:,2])<=-0.78

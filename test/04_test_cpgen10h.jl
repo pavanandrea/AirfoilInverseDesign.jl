@@ -16,8 +16,8 @@ include("../src/mgm.jl");
 #to assess the representativeness of the parametrization
 (airfoil,airfoilheader) = generatenaca4airfoil("4412",100);
 (cpexact,_,_,_,_) = panel1(airfoil,0);
-#params = [0.27, -0.79, 0.4, 1.8, -0.1, 0.04, -0.275, 2.0, 5.5, +0.175];
-params = [0.27, -0.79, 0.4, 1.8, -0.1, 0.04, -0.275, 3.3, 5.5, +0.175];
+#params = [0.27, -0.79, 0.4, 1.8, -0.1, 0.04, -0.275, 2.0, 5.5, +0.175];        #original implementation parameters
+params = tanh.([0.27, -0.79, 0.4, 1.8, -0.1, 0.04, -0.275, 3.3, 5.5, +0.175]);
 println("Generating pressure distribution...");
 cpgenerated = @time cpgen10h(params,airfoil[:,1]);
 println("Completed");
