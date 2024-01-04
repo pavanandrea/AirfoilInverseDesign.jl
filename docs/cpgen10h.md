@@ -42,3 +42,4 @@ For a total of 5 parameters on the upper surface and 5 parameters on the lower s
 * $p_{10}$: cp value at x/c=0.9 (lower surface)
 
 Note that the curvatures can have values up to 15. This is not a good practice in the field of numerical optimization; to normalize the parameters in the range $ 0 \leq p \leq 1 $, the most recent versions of cpgen10h are applying the $\arctan$ function.
+

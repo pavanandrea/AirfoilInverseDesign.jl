@@ -113,3 +113,4 @@ Issues
 ------
 
 If you encounter any issues while using AirfoilInverseDesign.jl, please open an issue ticket and provide detailed information about the problem you are experiencing.
+
