@@ -77,9 +77,9 @@ This essentially means that the Linear Vortex method has the same computational 
 
 Let's now write the impermeability condition on the generic i-th panel, summing all the velocity contributions from the N panels in the point $P_i$ and then imposing its normal component to be zero:
 
-$$ 0 = \sum_{j=1}^N \vec{V}_{ij} \cdot \vec{n}_i + \vec{V}_∞ \cdot \vec{n}_i = \sum_{j=1}^N \left[ V_{IND-x} \vec{t}_j + V_{IND-y} \vec{n}_j \right] \cdot \vec{n}_i + \vec{V}_∞ \cdot \vec{n}_i $$
+$$ 0 = \sum_{j=1}^N \vec{V}_{ij} \cdot \vec{n}_i + \vec{V}_{\infty} \cdot \vec{n}_i = \sum_{j=1}^N \left[ V_{IND-x} \vec{t}_j + V_{IND-y} \vec{n}_j \right] \cdot \vec{n}_i + \vec{V}_{\infty} \cdot \vec{n}_i $$
 
-$$ 0 = \sum_{j=1}^N  \left[ γ_j \left( A_{xij} \vec{t}_j + A_{yij} \vec{n}_j \right) \cdot \vec{n}_i + γ_{j+1} \left( B_{xij} \vec{t}_j + B_{yij} \vec{n}_j \right) \cdot \vec{n}_i \right] + \vec{V}_∞ \cdot \vec{n}_i $$
+$$ 0 = \sum_{j=1}^N  \left[ γ_j \left( A_{xij} \vec{t}_j + A_{yij} \vec{n}_j \right) \cdot \vec{n}_i + γ_{j+1} \left( B_{xij} \vec{t}_j + B_{yij} \vec{n}_j \right) \cdot \vec{n}_i \right] + \vec{V}_{\infty} \cdot \vec{n}_i $$
 
 Where $A_{xij}=-\frac{(l-2x)D+yC}{4πl}$, $B_{xij}=-\frac{(l+2x)D-yC}{4πl}$, $A_{yij}=\frac{(l-2x)C-4yD+4l}{8πl}$, $B_{yij}=\frac{(l+2x)C+4yD-4l}{8πl}$.
 
@@ -104,7 +104,7 @@ Also, this method allows the velocity field to be evaluated not on the centers o
 
 Finally, the pressure distribution $c_P$ on the nodes can be calculated with Bernoulli's equation:
 
-$$ c_P = 1 - \frac{V_{t}^2}{V_∞^2} = 1 - \frac{γ^2}{V_∞^2} $$
+$$ c_P = 1 - \frac{V_{t}^2}{V_{\infty}^2} = 1 - \frac{γ^2}{V_{\infty}^2} $$
 
 Regarding the aerodynamic coefficients, it is necessary to integrate the pressure contributions over the entire profile border. This can be done analytically since the vorticity distribution $γ(s)$ is known:
 

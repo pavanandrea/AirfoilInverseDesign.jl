@@ -2,17 +2,6 @@
 
 AirfoilInverseDesign.jl is a Julia package that implements the Modified Garabedian-McFadden Method (MGM) for airfoil inverse design. The tool accepts a target pressure distribution as input and generates the corresponding airfoil geometry. It also embeds a parametrization of the pressure distribution, enabling the optimization of the airfoil geometry for a given application.
 
-Traditionally, to optimize an airfoil shape engineers choose to directly parametrize the upper and lower gometry curves, for example using Bezier curves.
-Instead, the idea behind the EMFID method is to parametrize the pressure distribution cp(x) around the airfoil, and to find the corresponding geometry using an inverse design method like the MGM.
-At first glance this approach can seem to be unneccessarily involved, but it offers several numerical advantages:
-* lower number of parameters needed to represent the search space
-* it is possible to embed performance constraints into the parametrization, since the CL and the CM are given by the area inside the cp(x) curves
-* a localized perturbation on pressure distribution leads to a whole different airfoil, consequently:
-* optimized airfoils are less sensitive to real-world perturbations and geometrical errors, and
-* optimizers are less likely to get stuck in a local minima
-
-It is worth noting that performance is ultimately the only thing that matter when flying, not the shape itself. From this point of view, parametrizing cp(x) makes more sense than parametrizing y(x).
-
 Features
 --------
 
